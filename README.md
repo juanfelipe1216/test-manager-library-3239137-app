@@ -64,3 +64,11 @@ El token permanece en memoria y se pierde al recargar.
 Los permisos también se aplican en el backend.
 Los selectores de préstamo cargan hasta 50 socios y libros;
 los listados principales sí tienen paginación.
+
+El catálogo busca automáticamente por título o autor y permite combinar
+el texto con una categoría. Al cambiar filtros vuelve a la primera página;
+se cancelan consultas anteriores para que no sustituyan el resultado actual.
+La búsqueda de libros ignora mayúsculas, tildes y espacios en los extremos.
+El selector muestra el número de libros activos por categoría y deshabilita
+las categorías vacías. El formulario de libros permite asignar cualquiera
+de las cinco categorías existentes, incluso si todavía está vacía.

@@ -65,6 +65,9 @@ El login incluye un contacto desplegable para solicitar una cuenta al
 administrador. administracion@managerlibrary.example es una dirección
 ficticia de demostración; no recibe mensajes.
 Los permisos también se aplican en el backend.
+En Socios, el administrador puede eliminar registros sin préstamos,
+tras confirmar la acción. Los socios con cualquier historial de préstamos
+se conservan y la API rechaza su eliminación.
 Los selectores de préstamo cargan hasta 50 socios y libros;
 los listados principales sí tienen paginación.
 

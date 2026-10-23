@@ -61,6 +61,9 @@ Compilar: npm run build.
 
 Vite usa proxy /api; dentro de Docker el destino es api:8000.
 El token permanece en memoria y se pierde al recargar.
+El login incluye un contacto desplegable para solicitar una cuenta al
+administrador. administracion@managerlibrary.example es una dirección
+ficticia de demostración; no recibe mensajes.
 Los permisos también se aplican en el backend.
 Los selectores de préstamo cargan hasta 50 socios y libros;
 los listados principales sí tienen paginación.

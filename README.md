@@ -48,3 +48,19 @@ No hay prórroga: suban avances parciales con commits pequeños durante la prueb
 | [`test-manager-library-3239137-page`](https://github.com/code-sena/test-manager-library-3239137-page) | Sitio público estático de presentación |
 | [`test-manager-library-3239137-infra`](https://github.com/code-sena/test-manager-library-3239137-infra) | Contenedores, red, volúmenes y motor de base de datos vacío |
 | [`test-manager-library-3239137-tool`](https://github.com/code-sena/test-manager-library-3239137-tool) | Utilidades: sembrador de datos de demostración |
+
+## Aplicación implementada
+React 19 + Vite. Login, catálogo con búsqueda y categorías, socios,
+préstamos y devoluciones por línea, vencidos, reporte para admin y
+creación de bibliotecarios. Catálogo: crear, editar, dar de baja,
+subir y quitar portadas. Errores devueltos por API visibles al usuario.
+
+Entorno integrado: http://localhost:5173.
+Fuera de Docker: npm ci y npm run dev; API en localhost:8000.
+Compilar: npm run build.
+
+Vite usa proxy /api; dentro de Docker el destino es api:8000.
+El token permanece en memoria y se pierde al recargar.
+Los permisos también se aplican en el backend.
+Los selectores de préstamo cargan hasta 50 socios y libros;
+los listados principales sí tienen paginación.
